@@ -1,0 +1,15 @@
+{
+  "id": "cmpl-8BjBFnvEvQcTtmdMxborVgGhvuKrI",
+  "object": "text_completion",
+  "created": 1697805973,
+  "model": "gpt-3.5-turbo-instruct",
+  "choices": [
+    {
+      "text": "\n\n{ \n  \"projects\": \"find\",\n  \"fields\": {\n   ",
+      "index": 0,
+      "logprobs": null,
+      "finish_reason": "length"
+    }
+  ],
+  "usage": { "prompt_tokens": 26, "completion_tokens": 16, "total_tokens": 42 }
+}
