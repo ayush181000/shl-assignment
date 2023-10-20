@@ -25,7 +25,7 @@ app.get('/', async (req, res) => {
 
         if (req.query.smartSearch) {
             const completion = await openai.completions.create({
-                prompt: `Turn this search query into a json search query which can be executed directly in mongodb: ${req.query.smartSearch}. Always give response in a correct json format and do not add anything before and after it.Use only frontend, backend, technologies, infrastructure,name as object keys if required.`,
+                prompt: `Turn this search query into a json search query which can be executed directly in mongodb: ${req.query.smartSearch}. Always give response in a correct json format and do not add anything before and after it.Use only frontend, backend, technologies, infrastructure,name as object keys if required. Treat all the keys as comma seperated values in a string.`,
                 model: "gpt-3.5-turbo-instruct",
                 max_tokens: 200
             });
